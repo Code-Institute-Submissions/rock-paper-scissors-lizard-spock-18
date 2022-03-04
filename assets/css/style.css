@@ -56,14 +56,13 @@
     padding: 5px 20px;
 }
 
-.img {
+.btn {
     width: 150px;
     height: 150px;
     border-width: 2px;
     border-radius: 50%;
     padding: 5px 20px;
 }
-
 
 #rockButton {
     background: url("../images/rock-1.png") no-repeat center center;
@@ -98,24 +97,44 @@
 /* Styling for the results section */
 .playResult {
     height: 33%;
-    padding-left: 250px;
+    padding-left: 300px;
     display: flex;
 }
 
 .computerChoice {
-    padding-left: 75px;
-    padding-right: 50px;
+    width: 150px;
+    height: 150px;
+    border-width: 1000px;
+    border-radius: 50%;
+    background: url("../images/rock-1.png") no-repeat center center;
+    background-size: 175px 175px;
 }
 
 .playerChoice {
-    padding-left: 75px;
-    padding-right: 50px;
+    background: url("../images/rock-1.png") no-repeat center center;
+    background-size: 175px 175px;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#midDiv {
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    padding-top: 10%;
+    color: red;
+    font-size: 150%;
+    font-weight: bold;
 }
 
 /* Style the score board section */
 .scoreBoard {
     height: 33%;
-    padding-left: 150px;
+    padding-left: 175px;
     display: flex;
 }
 
@@ -123,7 +142,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 150%;
     padding-left: 75px;
-    padding-right: 75px;
+    padding-right: 100px;
 }
 
 .counter {
