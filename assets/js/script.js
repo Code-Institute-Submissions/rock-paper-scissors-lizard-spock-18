@@ -1,0 +1,1 @@
+let gameType = document.getElementsByClassName('gameChoice');
