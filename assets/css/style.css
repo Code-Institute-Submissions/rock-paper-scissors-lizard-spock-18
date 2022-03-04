@@ -19,7 +19,7 @@
 .headingDiv {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 350%;
+    font-size: 300%;
     position: absolute;
     width: 100%;
     top: 15%;
@@ -27,20 +27,15 @@
 
 .imageDiv {
     display: flex;
-    padding-left: 50px;
-    /* padding: 20px 0px 10px 10px; */
+    padding-left: 100px;
 }
 
 .imageDiv img {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-width: 1px;
     border-radius: 50%;
 }
-
-/* .heading-div .image-div {
-    line-height: 10px;
-} */
 
 /* This is the game board where user competes with the computer  */
 .gameBoard {
@@ -58,11 +53,11 @@
 }
 
 .img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-width: 1px;
     border-radius: 50%;
-    padding: 5px;
+    padding: 5px 20px;
 }
 
 /* Styling for the results section */
@@ -91,8 +86,8 @@
 
 .playersScores {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 200%;
-    padding-left: 50px;
+    font-size: 150%;
+    padding-left: 75px;
     padding-right: 75px;
 }
 
@@ -100,4 +95,20 @@
     color: #0000ff;
     font-weight: bold;
     padding-left: 50px;
+}
+
+/* Style the game choice section */
+.gameChoiceDiv {
+    height: 25%;
+    width: 100%;
+    position: relative;
+    margin: 30px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    text-align: center;
+}
+
+.radioButton {
+    padding-left: 50px;
+    padding-right: 50px;
 }
