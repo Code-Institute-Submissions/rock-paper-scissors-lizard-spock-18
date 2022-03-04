@@ -81,3 +81,23 @@
     padding-left: 75px;
     padding-right: 50px;
 }
+
+/* Style the score board section */
+.scoreBoard {
+    height: 33%;
+    padding-left: 150px;
+    display: flex;
+}
+
+.playersScores {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    padding-left: 50px;
+    padding-right: 75px;
+}
+
+.counter {
+    color: #0000ff;
+    font-weight: bold;
+    padding-left: 50px;
+}
