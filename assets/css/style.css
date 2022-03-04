@@ -1,0 +1,42 @@
+/* This is the broader area of the game */
+.game-board {
+    height: 75%;
+    width: 75%;
+    margin: auto;
+    padding: 5px;
+    border: 1px solid #252525;
+    background-color: #ffebcd;
+}
+
+/* Logo and Heading */
+.game-header {
+    height: 33%;
+    width: 100%;
+    position: relative;
+    margin: 30px auto;
+}
+
+.heading-div {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 350%;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+}
+
+.image-div {
+    display: flex;
+    padding: 20px 0px 20px 20px;
+}
+
+.image-div img {
+    width: 100px;
+    height: 100px;
+    border-width: 1px;
+    border-radius: 50%;
+}
+
+.heading-div .image-div {
+    line-height: 75px;
+}
