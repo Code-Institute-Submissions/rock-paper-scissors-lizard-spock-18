@@ -1,5 +1,5 @@
 /* This is the broader area of the game */
-.game-board {
+.game-frame {
     height: 75%;
     width: 75%;
     margin: auto;
@@ -10,7 +10,7 @@
 
 /* Logo and Heading */
 .game-header {
-    height: 33%;
+    height: 25%;
     width: 100%;
     position: relative;
     margin: 30px auto;
@@ -39,4 +39,27 @@
 
 .heading-div .image-div {
     line-height: 75px;
+}
+
+/* This is the game board where user competes with the computer  */
+.game-board {
+    height: 50%;
+    width: 100%;
+    position: relative;
+    margin: 30px auto;
+    background-color: #7fffd4;
+}
+
+.game-div {
+    height: 33%;
+    padding: 5px 100px;
+    display: flex;
+}
+
+.img {
+    width: 180px;
+    height: 180px;
+    border-width: 1px;
+    border-radius: 50%;
+    padding: 5px;
 }
