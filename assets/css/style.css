@@ -52,17 +52,42 @@
     display: flex;
 }
 
+.btnDiv {
+    padding: 5px 20px;
+}
+
 .img {
     width: 150px;
     height: 150px;
-    border-width: 1px;
+    border-width: 2px;
     border-radius: 50%;
     padding: 5px 20px;
 }
 
-.imgBtn {
-    background: url("../images/rock-1.png") no-repeat center center;
 
+#rockButton {
+    background: url("../images/rock-1.png") no-repeat center center;
+    background-size: 175px 175px;
+}
+
+#paperButton {
+    background: url("../images/paper-1.png") no-repeat center center;
+    background-size: 175px 175px;
+}
+
+#scissorsButton {
+    background: url("../images/scissors-1.png") no-repeat center center;
+    background-size: 175px 175px;
+}
+
+#lizardButton {
+    background: url("../images/lizard-1.png") no-repeat center center;
+    background-size: 175px 175px;
+}
+
+#spockButton {
+    background: url("../images/spock-1.png") no-repeat center center;
+    background-size: 175px 175px;
 }
 
 .imgBtn:hover {
