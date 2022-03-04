@@ -22,24 +22,25 @@
     font-size: 350%;
     position: absolute;
     width: 100%;
-    top: 25%;
+    top: 15%;
 }
 
 .image-div {
     display: flex;
-    padding: 20px 0px 20px 20px;
+    padding-left: 50px;
+    /* padding: 20px 0px 10px 10px; */
 }
 
 .image-div img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-width: 1px;
     border-radius: 50%;
 }
 
-.heading-div .image-div {
-    line-height: 75px;
-}
+/* .heading-div .image-div {
+    line-height: 10px;
+} */
 
 /* This is the game board where user competes with the computer  */
 .game-board {
@@ -52,7 +53,7 @@
 
 .game-div {
     height: 33%;
-    padding: 5px 100px;
+    padding: 20px 100px;
     display: flex;
 }
 
@@ -62,4 +63,21 @@
     border-width: 1px;
     border-radius: 50%;
     padding: 5px;
+}
+
+/* Styling for the results section */
+.play-result {
+    height: 33%;
+    padding-left: 250px;
+    display: flex;
+}
+
+.computer-choice {
+    padding-left: 75px;
+    padding-right: 50px;
+}
+
+.player-choice {
+    padding-left: 75px;
+    padding-right: 50px;
 }
