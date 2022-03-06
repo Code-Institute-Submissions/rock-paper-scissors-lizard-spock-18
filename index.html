@@ -19,7 +19,7 @@
 <body>
     <!-- Game frame - main div -->
     <div class="gameFrame">
-        <div class="gameHeader">
+        <div class="gameHeader" id="imgId">
             <div class="imageDiv">
                 <img src="rock-paper-scissors-lizard-spock.ico" alt="Image of Rock Paper Scissors Lizard Spock pentagon">
             </div>
@@ -32,7 +32,7 @@
         <div class="gameBoard">
             <!-- rock paper scissors lizard spock images from icon library. Player clicks their choice.  -->
             <!-- https://thenerdnroll.wordpress.com/2013/01/29/rock-paper-scissors-lizard-spock/ -->
-            <div class="gameDiv">
+            <div class="gameDiv" id="gD">
                 <div class="btnDiv">
                     <button class="btn imgBtn" id="rockButton" aria-label="Rock Button"></button>
                 </div>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <!-- Div activated by javascript to display rules when player hovers over the heading image -->
-            <div class="gameRules">
+            <div class="gameRules" id="gR">
                 <p>As Sheldon explains, "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors."</p>
             </div>
             <!-- Challenge display - shows the hand played by computer and player -->

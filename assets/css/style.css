@@ -43,6 +43,10 @@
 }
 
 /* popup activted by javascript to display rules */
+#imgId:hover {
+    cursor: pointer;
+}
+
 .gameRules {
     display: none;
     height: 33%;
