@@ -69,19 +69,19 @@ function computerPlay() {
 
     if (num === 0) {
         document.getElementById("c").setAttribute('style','background: url("assets/images/rock-1.png") no-repeat center center; background-size: 115% 115%;');
-        computerChoice = "rockButton";
+        computerChoice = "rock";
     } else if (num === 1) {
         document.getElementById("c").setAttribute('style','background: url("assets/images/paper-1.png") no-repeat center center; background-size: 115% 115%;');
-        computerChoice = "paperButton";
+        computerChoice = "paper";
     } else if (num === 2) {
         document.getElementById("c").setAttribute('style','background: url("assets/images/scissors-1.png") no-repeat center center; background-size: 115% 115%;');
-        computerChoice = "scissorsButton";
+        computerChoice = "scissors";
     } else if (num === 3) {
         document.getElementById("c").setAttribute('style','background: url("assets/images/lizard-1.png") no-repeat center center; background-size: 115% 115%;');
-        computerChoice = "lizardButton";
+        computerChoice = "lizard";
     } else if (num === 4) {
         document.getElementById("c").setAttribute('style','background: url("assets/images/spock-1.png") no-repeat center center; background-size: 115% 115%;');
-        computerChoice = "spockButton";
+        computerChoice = "spock";
     }
     return computerChoice;
 }
