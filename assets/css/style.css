@@ -42,6 +42,16 @@
     border-radius: 50%;
 }
 
+/* popup activted by javascript to display rules */
+.gameRules {
+    display: none;
+    height: 33%;
+    padding: 2% 2%;
+    overflow: auto;
+    background-color: #000;
+    color: #fff;
+}
+
 /* This is the game board where user competes with the computer  */
 .gameBoard {
     width: 100%;
