@@ -34,19 +34,19 @@
             <!-- https://thenerdnroll.wordpress.com/2013/01/29/rock-paper-scissors-lizard-spock/ -->
             <div class="gameDiv" id="gD">
                 <div class="btnDiv">
-                    <button class="btn imgBtn" id="rockButton" aria-label="Rock Button"></button>
+                    <button class="btn imgBtn" id="rockButton" aria-label="Rock Button" data-choice="rock"></button>
                 </div>
                 <div class="btnDiv">
-                    <button class="btn imgBtn" id="paperButton" aria-label="Paper Button"></button>
+                    <button class="btn imgBtn" id="paperButton" aria-label="Paper Button" data-choice="paper"></button>
                 </div>
                 <div class="btnDiv">
-                    <button class="btn imgBtn" id="scissorsButton" aria-label="Scissors Button"></button>
+                    <button class="btn imgBtn" id="scissorsButton" aria-label="Scissors Button" data-choice="scissors"></button>
                 </div>
                 <div class="btnDiv">
-                    <button class="btn imgBtn" id="lizardButton" aria-label="Lizard Button"></button>
+                    <button class="btn imgBtn" id="lizardButton" aria-label="Lizard Button" data-choice="lizard"></button>
                 </div>
                 <div class="btnDiv">
-                    <button class="btn imgBtn" id="spockButton" aria-label="Spock Button"></button>
+                    <button class="btn imgBtn" id="spockButton" aria-label="Spock Button" data-choice="spock"></button>
                 </div>
             </div>
             <!-- Div activated by javascript to display rules when player hovers over the heading image -->
@@ -55,7 +55,7 @@
             </div>
             <!-- Challenge display - shows the hand played by computer and player -->
             <div class="playResult">
-                <span class="choiceImg computerChoice"></span>
+                <span class="choiceImg computerChoice" id="c"></span>
                 <span id="midDiv">Who wins?</span>
                 <span class="choiceImg playerChoice" id="p"></span>
             </div>

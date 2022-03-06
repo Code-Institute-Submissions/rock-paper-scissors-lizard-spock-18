@@ -20,25 +20,40 @@ function runGame() {
      * An event listener to catch when a player click on a button
      */
     let buttons = document.getElementsByTagName("button");
+    let playerChoice;
+    let computerChoice;
 
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("id") === "rockButton") {
                 document.getElementById("p").setAttribute('style','background: url("assets/images/rock-1.png") no-repeat center center; background-size: 115% 115%;');
+                playerChoice = this.getAttribute("id");
+                computerChoice = computerPlay();
             } else if (this.getAttribute("id") === "paperButton") {
                 document.getElementById("p").setAttribute('style','background: url("assets/images/paper-1.png") no-repeat center center; background-size: 115% 115%;');
+                playerChoice = this.getAttribute("id");
+                computerChoice = computerPlay();
             } else if (this.getAttribute("id") === "scissorsButton") {
                 document.getElementById("p").setAttribute('style','background: url("assets/images/scissors-1.png") no-repeat center center; background-size: 115% 115%;');
+                playerChoice = this.getAttribute("id");
+                computerChoice = computerPlay();
             } else if (this.getAttribute("id") === "lizardButton") {
                 document.getElementById("p").setAttribute('style','background: url("assets/images/lizard-1.png") no-repeat center center; background-size: 115% 115%;');
+                playerChoice = this.getAttribute("id");
+                computerChoice = computerPlay();
             } else if (this.getAttribute("id") === "spockButton") {
                 document.getElementById("p").setAttribute('style','background: url("assets/images/spock-1.png") no-repeat center center; background-size: 115% 115%;');
-            } 
+                playerChoice = this.getAttribute("id");
+                computerChoice = computerPlay();
+            }
         })
     }
 
-}
+    if (playerChoice === computerChoice) {
+        document.getElementById("midDiv").innerText = "It's a draw"
+    }
 
+}
 
 function mouseOverImage() {
     document.getElementById("gR").style.display = "block";
@@ -48,3 +63,25 @@ function mouseOutImage() {
     document.getElementById("gR").style.display = "";
 }   
 
+function computerPlay() {
+    let num = Math.floor(Math.random() * 5);
+    let computerChoice;
+
+    if (num === 0) {
+        document.getElementById("c").setAttribute('style','background: url("assets/images/rock-1.png") no-repeat center center; background-size: 115% 115%;');
+        computerChoice = "rockButton";
+    } else if (num === 1) {
+        document.getElementById("c").setAttribute('style','background: url("assets/images/paper-1.png") no-repeat center center; background-size: 115% 115%;');
+        computerChoice = "paperButton";
+    } else if (num === 2) {
+        document.getElementById("c").setAttribute('style','background: url("assets/images/scissors-1.png") no-repeat center center; background-size: 115% 115%;');
+        computerChoice = "scissorsButton";
+    } else if (num === 3) {
+        document.getElementById("c").setAttribute('style','background: url("assets/images/lizard-1.png") no-repeat center center; background-size: 115% 115%;');
+        computerChoice = "lizardButton";
+    } else if (num === 4) {
+        document.getElementById("c").setAttribute('style','background: url("assets/images/spock-1.png") no-repeat center center; background-size: 115% 115%;');
+        computerChoice = "spockButton";
+    }
+    return computerChoice;
+}
