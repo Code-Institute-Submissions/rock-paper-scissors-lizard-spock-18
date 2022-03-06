@@ -32,12 +32,12 @@
 
 .imageDiv {
     display: flex;
-    padding-left: 5%;
+    padding-left: 2%;
 }
 
 .imageDiv img {
-    width: 10%;
-    height: 10%;
+    width: 8%;
+    height: 8%;
     border-width: 1px;
     border-radius: 50%;
 }
@@ -61,8 +61,10 @@
 }
 
 .btn {
-    width: 150px;
-    height: 150px;
+    /* width: 150px;
+    height: 150px;*/
+    width: 10%;
+    height: 10%;
     border-width: 2px;
     border-radius: 50%;
 }
@@ -114,7 +116,7 @@
     background-size: 115% 115%;
 }
 
-.img {
+.imgResult {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -199,7 +201,7 @@
 
     .imageDiv {
         display: flex;
-        padding-left: 3%;
+        padding-left: 2%;
     }
 
     .btn {
@@ -222,24 +224,23 @@
     }
 
     /* Results board */
-    .img {
+    .imgResult {
         width: 120px;
         height: 120px;
         border-radius: 50%;
     }
 }
 
-/* Media queries */
 @media screen and (max-width: 1050px) {
 
     /* Heading */
     .headingFont {
-        font-size: 200%;
+        font-size: 190%;
     }
 
     .imageDiv {
         display: flex;
-        padding-left: 3%;
+        padding-left: 2%;
     }
 
     /* Game board */
@@ -261,7 +262,7 @@
         display: flex;
     }
 
-    .img {
+    .imgResult {
         width: 125px;
         height: 125px;
         border-radius: 50%;
@@ -272,12 +273,12 @@
 
     /* Heading */
     .headingFont {
-        font-size: 150%;
+        font-size: 160%;
     }
 
     .imageDiv {
         display: flex;
-        padding-left: 3%;
+        padding-left: 2%;
     }
 
     /* Game board */
@@ -299,7 +300,7 @@
         display: flex;
     }
 
-    .img {
+    .imgResult {
         width: 100px;
         height: 100px;
         border-radius: 50%;
@@ -321,16 +322,16 @@
     }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 790px) {
 
     /* Heading */
     .headingFont {
-        font-size: 125%;
+        font-size: 140%;
     }
 
     .imageDiv {
         display: flex;
-        padding-left: 3%;
+        padding-left: 2%;
     }
 
     /* Game board */
@@ -352,7 +353,7 @@
         display: flex;
     }
 
-    .img {
+    .imgResult {
         width: 80px;
         height: 80px;
         border-radius: 50%;
@@ -374,7 +375,27 @@
     }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 700px) {
+
+    /* Heading */
+    .headingFont {
+        font-size: 120%;
+    }
+
+    /* Game board */
+    .btnDiv {
+        padding: 1% 0 1% 2%;
+    }
+
+    .btn {
+        width: 55px;
+        height: 55px;
+        border-width: 1px;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
 
     /* Heading */
     .headingFont {
@@ -405,7 +426,7 @@
         display: flex;
     }
 
-    .img {
+    .imgResult {
         width: 60px;
         height: 60px;
         border-radius: 50%;
@@ -433,11 +454,11 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
 
     /* Heading */
     .headingFont {
-        font-size: 70%;
+        font-size: 75%;
     }
 
     .imageDiv {
@@ -464,7 +485,7 @@
         display: flex;
     }
 
-    .img {
+    .imgResult {
         width: 40px;
         height: 40px;
         border-radius: 50%;
