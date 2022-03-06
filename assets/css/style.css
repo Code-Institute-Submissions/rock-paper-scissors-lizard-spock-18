@@ -49,11 +49,9 @@
 
 .gameRules {
     display: none;
-    height: 33%;
-    padding: 2% 2%;
-    overflow: auto;
-    background-color: #000;
-    color: #fff;
+    padding: 0 5%;
+    background-color: #7fffd4;
+    color: #000;
 }
 
 /* This is the game board where user competes with the computer  */
@@ -124,7 +122,7 @@
 }
 
 .playerChoice {
-    background: url("../images/rock-1.png") no-repeat center center;
+    background: url("../images/paper-1.png") no-repeat center center;
     background-size: 115% 115%;
 }
 
