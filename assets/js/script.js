@@ -17,7 +17,9 @@ function runGame() {
     imageId.addEventListener("mouseout", mouseOutImage);
 
     /**
-     * An event listener to catch when a player click on a button
+     * An event listener to catch when a player clicks on a button.
+     * The choice made by the player will then change the image on Players Choice.
+     * The next step is to call the computer to play
      */
     let buttons = document.getElementsByTagName("button");
     let playerChoice;
@@ -52,16 +54,60 @@ function runGame() {
     }
 }
 
+/**
+ * The mouseOverImage and mouseOutImage functions
+ * When the user hovers over the heading of the game,
+ * the rules, as stated by sheldon, are displayed
+ */
+function mouseOverImage() {
+    document.getElementById("gR").style.display = "block";
+}
+
+function mouseOutImage() {
+    document.getElementById("gR").style.display = "";
+}   
+
+/**
+ * The computerPlay function
+ * Generate the computer choice by fetching up to 5 random numbers
+ * These random numbers are then matched to the five choices
+ * The computer choice is then returned to the function call
+ */
+function computerPlay() {
+    let num = Math.floor(Math.random() * 5);
+    let computerChoice;
+
+    if (num === 0) {
+        document.getElementById("c").setAttribute('style','background: url("assets/images/rock-1.png") no-repeat center center; background-size: 115% 115%;');
+        computerChoice = "rock";
+    } else if (num === 1) {
+        document.getElementById("c").setAttribute('style','background: url("assets/images/paper-1.png") no-repeat center center; background-size: 115% 115%;');
+        computerChoice = "paper";
+    } else if (num === 2) {
+        document.getElementById("c").setAttribute('style','background: url("assets/images/scissors-1.png") no-repeat center center; background-size: 115% 115%;');
+        computerChoice = "scissors";
+    } else if (num === 3) {
+        document.getElementById("c").setAttribute('style','background: url("assets/images/lizard-1.png") no-repeat center center; background-size: 115% 115%;');
+        computerChoice = "lizard";
+    } else if (num === 4) {
+        document.getElementById("c").setAttribute('style','background: url("assets/images/spock-1.png") no-repeat center center; background-size: 115% 115%;');
+        computerChoice = "spock";
+    }
+    return computerChoice;
+}
+
+/**
+ * The playGame function
+ * This is where the rules of the game, as stated by sheldon,
+ * are played out in a conditional IF statement
+*/
 function playGame(playerChoice, computerChoice) {
-    console.log(playerChoice + ' 0 ' + computerChoice);
     if (playerChoice === computerChoice) {
         document.getElementById("midDiv").innerText = "It's a draw";
     //Scissors and Paper
     } else if (playerChoice === "scissors" && computerChoice === "paper") {
-        console.log(playerChoice + ' 1 ' + computerChoice);
         document.getElementById("midDiv").innerHTML = "Player wins";
     } else if (playerChoice === "paper" && computerChoice === "scissors") {
-        console.log(playerChoice + ' 2 ' + computerChoice);
         document.getElementById("midDiv").innerHTML = "Computer wins";
     //Paper and Rock
     } else if (playerChoice === "paper" && computerChoice === "rock") {
@@ -109,35 +155,4 @@ function playGame(playerChoice, computerChoice) {
     } else if (playerChoice === "scissors" && computerChoice === "rock") {
         document.getElementById("midDiv").innerText = "Computer wins";
     }
-}
-
-function mouseOverImage() {
-    document.getElementById("gR").style.display = "block";
-}
-
-function mouseOutImage() {
-    document.getElementById("gR").style.display = "";
-}   
-
-function computerPlay() {
-    let num = Math.floor(Math.random() * 5);
-    let computerChoice;
-
-    if (num === 0) {
-        document.getElementById("c").setAttribute('style','background: url("assets/images/rock-1.png") no-repeat center center; background-size: 115% 115%;');
-        computerChoice = "rock";
-    } else if (num === 1) {
-        document.getElementById("c").setAttribute('style','background: url("assets/images/paper-1.png") no-repeat center center; background-size: 115% 115%;');
-        computerChoice = "paper";
-    } else if (num === 2) {
-        document.getElementById("c").setAttribute('style','background: url("assets/images/scissors-1.png") no-repeat center center; background-size: 115% 115%;');
-        computerChoice = "scissors";
-    } else if (num === 3) {
-        document.getElementById("c").setAttribute('style','background: url("assets/images/lizard-1.png") no-repeat center center; background-size: 115% 115%;');
-        computerChoice = "lizard";
-    } else if (num === 4) {
-        document.getElementById("c").setAttribute('style','background: url("assets/images/spock-1.png") no-repeat center center; background-size: 115% 115%;');
-        computerChoice = "spock";
-    }
-    return computerChoice;
 }
