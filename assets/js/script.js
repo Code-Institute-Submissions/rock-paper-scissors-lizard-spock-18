@@ -49,8 +49,8 @@ function runGame() {
                 computerChoice = computerPlay();
             }
             playGame(playerChoice, computerChoice);
+            incrementScore();
         })
-        console.log(playerChoice + ' inside ' + computerChoice);
     }
 }
 
@@ -106,9 +106,9 @@ function playGame(playerChoice, computerChoice) {
         document.getElementById("midDiv").innerText = "It's a draw";
     //Scissors and Paper
     } else if (playerChoice === "scissors" && computerChoice === "paper") {
-        document.getElementById("midDiv").innerHTML = "Player wins";
+        document.getElementById("midDiv").innerText = "Player wins";
     } else if (playerChoice === "paper" && computerChoice === "scissors") {
-        document.getElementById("midDiv").innerHTML = "Computer wins";
+        document.getElementById("midDiv").innerText = "Computer wins";
     //Paper and Rock
     } else if (playerChoice === "paper" && computerChoice === "rock") {
         document.getElementById("midDiv").innerText = "Player wins";
@@ -154,5 +154,23 @@ function playGame(playerChoice, computerChoice) {
         document.getElementById("midDiv").innerText = "Player wins";
     } else if (playerChoice === "scissors" && computerChoice === "rock") {
         document.getElementById("midDiv").innerText = "Computer wins";
+    }
+}
+
+/**
+ * The incrementScore function
+ * increments the score of the winning player
+ */
+function incrementScore() {
+    let whoWon = document.getElementById("midDiv").innerText;
+    let playerScore = parseInt(document.getElementById("playerScore").innerText);
+    let computerScore = parseInt(document.getElementById("computerScore").innerText);
+
+    if (whoWon === "Player wins") {
+        playerScore += 1;
+        document.getElementById("playerScore").innerText = playerScore;
+    } else if (whoWon === "Computer wins") {
+        computerScore += 1;
+        document.getElementById("computerScore").innerText = computerScore;
     }
 }
