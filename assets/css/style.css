@@ -169,8 +169,8 @@
 }
 
 .radioButton {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 /* Media queries */
@@ -383,6 +383,12 @@
         border-width: 1px;
         border-radius: 50%;
     }
+
+    /* Style the game choice section */
+    .gameChoiceDiv {
+        font-size: 120%;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -436,6 +442,12 @@
         font-size: 100%;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    /* Style the game choice section */
+    .gameChoiceDiv {
+        font-size: 100%;
+        text-align: center;
     }
 }
 
@@ -496,4 +508,11 @@
         padding-left: 2%;
         padding-right: 2%;
     }
+    
+    /* Style the game choice section */
+    .gameChoiceDiv {
+        font-size: 85%;
+        text-align: center;
+}
+
 }

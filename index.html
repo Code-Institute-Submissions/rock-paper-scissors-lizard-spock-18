@@ -29,7 +29,7 @@
         </div>
 
         <!-- Game board - Where player challenges the computer -->
-        <div class="gameBoard">
+        <div class="gameBoard" id="gameOff">
             <!-- rock paper scissors lizard spock images cut up from the image I took from the site:   -->
             <!-- https://thenerdnroll.wordpress.com/2013/01/29/rock-paper-scissors-lizard-spock/ -->
             <div class="gameDiv" id="gD">
@@ -67,21 +67,21 @@
         </div>
 
         <!-- Game choice radio buttons -->
-        <!-- <div class="gameChoiceDiv">
+        <div class="gameChoiceDiv" id="gameChoiceId">
             <p>Choose your game type:</p>
             <span class="radioButton">
                 <label class="label" for="bestOfThree">Best of Three</label>
-                <input class="gameChoice" type="radio" id="bestOfThree" name="play">
+                <input class="gameChoice" type="radio" id="bestOfThree" value="3" name="play">
             </span>
             <span class="radioButton">
                 <label class="label" for="bestOfFive">Best of Five</label>
-                <input class="gameChoice" type="radio" id="bestOfFive" name="play">
+                <input class="gameChoice" type="radio" id="bestOfFive" value="5" name="play">
             </span>
             <span class="radioButton">
                 <label class="label" for="noLimit">No Limit</label>
-                <input class="gameChoice" type="radio" id="noLimit" name="play" checked>
+                <input class="gameChoice" type="radio" id="noLimit" value="0" name="play">
             </span>
-        </div> -->
+        </div>
     </div>
     <!-- link-in java script file -->
     <script src="assets/js/script.js"></script>

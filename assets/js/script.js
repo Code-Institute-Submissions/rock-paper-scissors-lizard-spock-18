@@ -1,12 +1,42 @@
-// Get the game choice made by the player
-let gameChoice = document.getElementsByClassName('gameChoice');
-
 /**
  * Only once the page has loaded run the game
  */
-document.addEventListener("DOMContentLoaded",runGame());
+document.addEventListener("DOMContentLoaded", gameType());
 
-function runGame() {
+/**
+ * The gameType function
+ * Disables the game board and runs the getChoice function
+ * once the player chooses an option the runGame is called and the game board is enabled
+ */
+function gameType() {
+    // Get the game choice made by the player
+    document.getElementById('imgId').setAttribute("style", "opacity: 0.5; pointer-events: none;");
+    document.getElementById('gameOff').setAttribute("style", "opacity: 0.5; pointer-events: none;");
+    gameChoiceId = document.getElementById("gameChoiceId");
+    gameChoiceId.addEventListener("click", getChoice);
+    runGame();
+}
+
+/**
+ * The getChoice function
+ * Disables the game board and catches the game type radio button the player clicks on.
+ * once the player chosses an option the game runs and the game board is enabled
+ */
+function getChoice() {
+    let gameChoice = document.getElementsByClassName('gameChoice');
+
+    for (let radio of gameChoice) {
+        if (radio.checked === true) {
+            document.getElementById('imgId').setAttribute("style", "opacity: 1; pointer-events: auto;");
+            document.getElementById('gameOff').setAttribute("style", "opacity: 1; pointer-events: auto;");
+            document.getElementById('computerScore').innerText = "0";
+            document.getElementById('playerScore').innerText = "0";
+         }
+    }
+ }
+
+ function runGame(gameChosen) {
+
     /**
      * The player can view the game rules, as stated by Sheldon,
      * when the hover over the game heading.
@@ -24,7 +54,6 @@ function runGame() {
     let buttons = document.getElementsByTagName("button");
     let playerChoice;
     let computerChoice;
-
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("id") === "rockButton") {
