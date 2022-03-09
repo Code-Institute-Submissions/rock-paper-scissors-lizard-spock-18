@@ -78,10 +78,13 @@ I made use of the following to test my code:
 •	HTML -- W3C validator
 
 •	CSS -- W3C validator
+  ![image](https://user-images.githubusercontent.com/22208203/157528832-39f2a2b2-224d-4687-83ab-f3fbe311ea1e.png)
 
 •	JShint -- Javascript code validator
 
 •	Lighthouse -- test website performance, accessibility, best practices and SEO.
+
+  ![image](https://user-images.githubusercontent.com/22208203/157527025-41bb4576-bd95-4dab-8255-df402f697609.png)
 
 ### Known Bugs
 
