@@ -383,6 +383,7 @@
 
     /* Style the game choice section */
     .gameChoiceDiv {
+        margin: 10px auto;
         font-size: 120%;
         text-align: center;
     }
@@ -443,6 +444,7 @@
 
     /* Style the game choice section */
     .gameChoiceDiv {
+        margin: 10px auto;
         font-size: 100%;
         text-align: center;
     }
@@ -508,6 +510,7 @@
     
     /* Style the game choice section */
     .gameChoiceDiv {
+        margin: 10px auto;
         font-size: 85%;
         text-align: center;
     }
