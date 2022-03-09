@@ -71,55 +71,9 @@ function runGame() {
 
             incrementScore();
     
-            //computerScore = parseInt(document.getElementById('computerScore').innerText);
-            //playerScore = parseInt(document.getElementById('playerScore').innerText);
         });
 
     }
-}
-
-/**
-* The playGame function
-* Has an event listener to catch when a player clicks on a button.
-* The choice made by the player will then change the image on Players Choice.
-* The next step is to call the computer to play. Once both plays are made
-* the gameLogic function is called to work out who won. Then the incrementScore
-* function increments the winners score
-*/
-function playGame(button) {
-    // let counter = 0;
-    let playerChoice;
-    let computerChoice;
-
-    if (button.getAttribute("id") === "rockButton") {
-        document.getElementById("playerChoiceId").setAttribute('style','background: url("assets/images/rock-1.png") no-repeat center center; background-size: 115% 115%;');
-        playerChoice = button.getAttribute("data-choice");
-        computerChoice = computerPlay();
-    } else if (button.getAttribute("id") === "paperButton") {
-        document.getElementById("playerChoiceId").setAttribute('style','background: url("assets/images/paper-1.png") no-repeat center center; background-size: 115% 115%;');
-        playerChoice = button.getAttribute("data-choice");
-        computerChoice = computerPlay();
-    } else if (button.getAttribute("id") === "scissorsButton") {
-        document.getElementById("playerChoiceId").setAttribute('style','background: url("assets/images/scissors-1.png") no-repeat center center; background-size: 115% 115%;');
-        playerChoice = button.getAttribute("data-choice");
-        computerChoice = computerPlay();
-    } else if (button.getAttribute("id") === "lizardButton") {
-        document.getElementById("playerChoiceId").setAttribute('style','background: url("assets/images/lizard-1.png") no-repeat center center; background-size: 115% 115%;');
-        playerChoice = button.getAttribute("data-choice");
-        computerChoice = computerPlay();
-    } else if (button.getAttribute("id") === "spockButton") {
-        document.getElementById("playerChoiceId").setAttribute('style','background: url("assets/images/spock-1.png") no-repeat center center; background-size: 115% 115%;');
-        playerChoice = button.getAttribute("data-choice");
-        computerChoice = computerPlay();
-    }
-    gameLogic(playerChoice, computerChoice);
-
-    // counter++;
-
-    // incrementScore();
-    
-    // computerScore = parseInt(document.getElementById('computerScore').innerText);
-    // playerScore = parseInt(document.getElementById('playerScore').innerText);
 }
 
 /**
