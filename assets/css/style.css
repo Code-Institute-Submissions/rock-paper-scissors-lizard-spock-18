@@ -160,10 +160,7 @@
 
 /* Style the game choice section */
 .gameChoiceDiv {
-    height: 25%;
-    width: 100%;
-    position: relative;
-    margin: 30px auto;
+    margin: 10px auto;
     font-size: 150%;
     text-align: center;
 }
