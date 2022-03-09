@@ -51,6 +51,12 @@ The players' choices are then displayed below the buttons, and in between, the m
 
 The winning player's score is incremented after each play.
 
+## Future Feature
+
+![image](https://user-images.githubusercontent.com/22208203/157523936-9206036c-d372-42f7-b2d1-857b76d700a8.png)
+
+The game choice section had a couple of challenges hence why I decided to put it off for now. The feature offer the user the of playing a Best of Three game or Best of Five game or an Infinite game. The player will make a choice by clicking or selecting a radio button.
+
 
 ## Technologies used
 
