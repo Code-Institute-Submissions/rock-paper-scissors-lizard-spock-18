@@ -79,6 +79,8 @@ I made use of the following to test my code:
   
   No errors were returned by W3C validator.
 
+  ![image](https://user-images.githubusercontent.com/22208203/157730936-e3d0c467-378b-44d4-ac22-7cfd41b3b3f6.png)
+
 •	CSS
   
   No errors were returned by W3C Jigsaw validator.
@@ -97,6 +99,7 @@ I made use of the following to test my code:
   I ran the lighthouse report to rate my website's performance, accessibility, best practices and SEO.
 
   ![image](https://user-images.githubusercontent.com/22208203/157527025-41bb4576-bd95-4dab-8255-df402f697609.png)
+
 
 
 ### Known Bugs
