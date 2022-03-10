@@ -195,13 +195,14 @@ function incrementScore() {
 }
 
 /**
+ * I moved the 3 functions below to the bottom of the script file 
+ * because this feature is not fully functional and therefore not enabled yet.
+ * 
  * The gameType function.
  * Disables the game board and runs the getChoice function
  * to let player choose the game type.
  * The following functions are related to this feature:
  *  gameType(), getChoice(), resetGame().
- * I moved these function to the bottom of the script file 
- * because this feature is not enabled yet.
  */
 function gameType() {
     //Disable the game board until user makes a game choice 
