@@ -75,16 +75,29 @@ The game choice section had a couple of challenges hence why I decided to put it
 
 I made use of the following to test my code:
 
-•	HTML -- W3C validator
+•	HTML
+  
+  No errors were returned by W3C validator.
 
-•	CSS -- W3C validator
+•	CSS
+  
+  No errors were returned by W3C Jigsaw validator.
+
   ![image](https://user-images.githubusercontent.com/22208203/157528832-39f2a2b2-224d-4687-83ab-f3fbe311ea1e.png)
 
-•	JShint -- Javascript code validator
+•	JShint
+  
+  I passed my Javascript code through JSHint code validator.
+  No errors were returned, however there were warnings.
 
-•	Lighthouse -- test website performance, accessibility, best practices and SEO.
+  ![image](https://user-images.githubusercontent.com/22208203/157585978-96b4b2b2-8c32-4a0d-9902-e60dacd2b32a.png)
+
+•	Lighthouse
+  
+  I ran the lighthouse report to rate my website's performance, accessibility, best practices and SEO.
 
   ![image](https://user-images.githubusercontent.com/22208203/157527025-41bb4576-bd95-4dab-8255-df402f697609.png)
+
 
 ### Known Bugs
 
