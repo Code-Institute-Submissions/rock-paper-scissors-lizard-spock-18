@@ -1,5 +1,3 @@
-![Rock Paper Scissors Lizard Spock image](pngegg-dot-com-clipart-rock-paper-scissors-lizard-spock.ico)
-
 # Rock Paper Scissors Lizard Spock
 
 ## Introduction
@@ -121,14 +119,16 @@ Rock Paper Scissors Lizard Spock has been deployed to GitHub Pages following the
  
 •	GitHub pages refreshed and the link to my deployed site is displayed
  
-•	**_Link to deployed site_**
+•	Link to deployed site: https://jprodrigues-gh.github.io/rock-paper-scissors-lizard-spock/
 
 
 ## References and Credits
 
 • The rock paper scissors lizard spock images for the game buttons, I cut up from the image I took from the site: https://thenerdnroll.wordpress.com/2013/01/29/rock-paper-scissors-lizard-spock/
 
-•	The rock paper scissors lizard spock image next to title I downloaded from pngegg.com and converted it to an icon through ConvertICO.com
+•	The rock paper scissors lizard spock image next to title, I downloaded from pngegg.com and converted it to an icon through ConvertICO.com
+
+•	I search slack for support when I have challenges with my code.
 
 •	I frequently referenced the following sites for guidance on coding syntax or challenges I faced when my code was not performing as expected:
 
