@@ -1,5 +1,5 @@
 /**
- * Only once the page has loaded run the game
+ * Only once the page has loaded run the game.
  */
 document.addEventListener("DOMContentLoaded", runGame());
 
@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", runGame());
 document.getElementById('gameChoiceId').setAttribute("style", "display: none");
 
 /**
-  * The runGame function
-  * the logic will receive the players choice when clicking on a button
-  * then running the computerPlay function.
-  * Once bot players have played, the gameLogic function is call to decide on a winner
-  * followed by incrementScore function to increment the winner's score
-  * @param {*} gameChosen parameter is the number of turns the player will have before game end
+ * The runGame function.
+ * The logic will receive the players choice, i.e. when clicking on a button,
+ * then running the computerPlay function, which plays the computer's hand.
+ * Once both players have played, the gameLogic function is called to decide on a winner
+ * followed by incrementScore function to increment the winner's score.
+ * @param {*} gameChosen parameter is the number of turns the player will have before game end
  */
 function runGame() {
     /**
@@ -34,15 +34,13 @@ function runGame() {
     let buttons = document.getElementsByTagName("button");
     
     for (let button of buttons) {
-        let counter = 0;
-
         /**
-        * This function has an event listener to catch when a player clicks on a button.
-        * The choice made by the player will then change the image on Players Choice.
-        * The next step is to call the computer to play. Once both plays are made
-        * the gameLogic function is called to work out who won. Then the incrementScore
-        * function increments the winners score
-        */
+         * This function has an event listener to catch when a player clicks on a button.
+         * The choice made by the player will then change the image on Players Choice.
+         * The next step is to call the computer to play.
+         * Once both plays are made the gameLogic function is called to work out who won.
+         * Then the incrementScore function increments the winners score.
+         */
         button.addEventListener("click", function() {
 
             if (button.getAttribute("id") === "rockButton") {
@@ -67,8 +65,6 @@ function runGame() {
                 computerChoice = computerPlay();
             }
             gameLogic(playerChoice, computerChoice);
-            counter++;
-
             incrementScore();
     
         });
@@ -77,9 +73,9 @@ function runGame() {
 }
 
 /**
- * The mouseOverImage and mouseOutImage functions
+ * The mouseOverImage and mouseOutImage functions.
  * When the user hovers over the heading of the game,
- * the rules, as stated by sheldon, are displayed
+ * the rules, as stated by sheldon, are displayed.
  */
 function mouseOverImage() {
     document.getElementById("gameRulesId").style.display = "block";
@@ -90,10 +86,10 @@ function mouseOutImage() {
 }   
 
 /**
- * The computerPlay function
- * Generate the computer choice by fetching up to 5 random numbers
- * These random numbers are then matched to the five choices
- * The computer choice, random generated, is then returned to the function call
+ * The computerPlay function.
+ * Generate the computer choice by fetching up to 5 random numbers.
+ * These random numbers are then matched to the five choices.
+ * The computer choice, random generated, is then returned to the function call.
  * @returns computerChoice
  */
 function computerPlay() {
@@ -120,10 +116,10 @@ function computerPlay() {
 }
 
 /**
- * The gameLogic function
+ * The gameLogic function.
  * This is where the rules of the game, as stated by sheldon,
- * are played out in a conditional IF statement
-*/
+ * are played out in a conditional IF statement.
+ */
 function gameLogic(playerChoice, computerChoice) {
     if (playerChoice === computerChoice) {
         document.getElementById("midDiv").innerText = "It's a draw";
@@ -181,8 +177,8 @@ function gameLogic(playerChoice, computerChoice) {
 }
 
 /**
- * The incrementScore function
- * increments the score of the winning player
+ * The incrementScore function.
+ * This function increments the score of the winning player.
  */
 function incrementScore() {
     let whoWon = document.getElementById("midDiv").innerText;
@@ -199,13 +195,15 @@ function incrementScore() {
 }
 
 /**
- * The gameType function
+ * The gameType function.
  * Disables the game board and runs the getChoice function
- * to let player choose the game type
+ * to let player choose the game type.
  * The following functions are related to this feature:
- *  gameType(), getChoice()
+ *  gameType(), getChoice(), resetGame().
+ * I moved these function to the bottom of the script file 
+ * because this feature is not enabled yet.
  */
- function gameType() {
+function gameType() {
     //Disable the game board until user makes a game choice 
     document.getElementById('imgId').setAttribute("style", "opacity: 0.5; pointer-events: none;");
     document.getElementById('gameOnOff').setAttribute("style", "opacity: 0.5; pointer-events: none;");
@@ -213,26 +211,22 @@ function incrementScore() {
     document.getElementById('playerScore').innerText = "0";
 
     //Get the game choice made by the player
-    gameChoiceId = document.getElementById('gameChoiceId');
+    let gameChoiceId = document.getElementById('gameChoiceId');
     gameChoiceId.addEventListener('click', getChoice());
-    console.log(gameChoiceId);
 }
 
 /**
- * The getChoice function
+ * The getChoice function.
  * Disables the game board and catches the game type radio button the player clicks on.
- * once the player chooses an option the game runs and the game board is enabled
+ * Once the player chooses an option the game runs and the game board is enabled.
  */
 function getChoice() {
-    console.log("in game choice");
     //Fetch the game choice radio button group
     let gameChoice = document.getElementsByClassName('gameChoice');
-    // gameChoiceId.removeEventListener('click', getChoice);
 
     //loop through the game choices to establish which radio button is selected/checked
     for (let radio of gameChoice) {
         if (radio.checked === true) {
-            console.log(radio);
             //if a radio button is checked enable the game board
             document.getElementById('imgId').setAttribute("style", "opacity: 1; pointer-events: auto;");
             document.getElementById('gameOnOff').setAttribute("style", "opacity: 1; pointer-events: auto;");
@@ -248,9 +242,10 @@ function getChoice() {
  }
 
  /**
-  * The resetGame function resets the game once Game Over is reached
-  * when the user chooses either the "Best of Three" or "Best of Five" game choices
-  * The function returns zero to it calling function: runGame(gameChosen) function
+  * The resetGame function.
+  * This function resets the game once Game Over is reached.
+  * This is only applicable if the user chooses either the "Best of Three" or "Best of Five" game choices.
+  * The function returns zero to its calling function: runGame(gameChosen) function.
   * @returns 0 
   */
  function resetGame() {
